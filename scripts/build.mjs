@@ -2,7 +2,15 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { marked } from 'marked';
 
 const markdown = await readFile(new URL('../resume.md', import.meta.url), 'utf8');
-const content = marked.parse(markdown, { gfm: true });
+const content = marked.parse(markdown, { gfm: true }).replace(
+  /<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/,
+  (_match, details) => {
+    const items = [...details.matchAll(/<span class="icon">[\s\S]*?<\/span>\s*<code>[\s\S]*?<\/code>/g)]
+      .map((match) => `<span class="contact-item">${match[0]}</span>`)
+      .join('');
+    return `<blockquote class="contact-details"><p>${items}</p></blockquote>`;
+  },
+);
 
 const html = `<!doctype html>
 <html lang="zh-CN">
