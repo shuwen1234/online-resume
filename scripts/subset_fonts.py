@@ -11,7 +11,7 @@ font_dir = root / "lapis-cv" / "fonts"
 output_dir = font_dir / "web"
 output_dir.mkdir(exist_ok=True)
 
-text = (root / "index.html").read_text(encoding="utf-8")
+text = (root / "resume-text.html").read_text(encoding="utf-8")
 characters = set(text)
 characters.update(chr(codepoint) for codepoint in range(32, 127))
 

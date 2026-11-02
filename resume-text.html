@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f0f4f9">
+  <meta name="description" content="杨舒雯的在线简历：AI 应用开发工程师，专注 Agent、RAG 与 Text2SQL。">
+  <title>杨舒雯 · AI 应用开发工程师</title>
+  <link rel="stylesheet" href="./lapis-cv/styles/main.css">
+  <link rel="stylesheet" href="./lapis-cv/styles/lapis-cv-serif.css">
+  <link rel="stylesheet" href="./styles/site.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="site-brand" href="#top" aria-label="返回简历顶部">杨舒雯 <span>· AI 应用开发</span></a>
+      <div class="site-actions">
+        <a href="./index.html">两页版</a>
+        <a class="source-link" href="./resume.md" download>下载 Markdown</a>
+        <button class="print-button" type="button" onclick="window.print()">打印 / 保存 PDF</button>
+      </div>
+    </header>
+    <main id="top" class="resume" aria-label="杨舒雯的简历">
+<h1>杨舒雯</h1>
+<blockquote class="contact-details"><p><span class="contact-item"><span class="icon">&#xe60f;</span> <code>199-9625-3593</code></span><span class="contact-item"><span class="icon">&#xe7ca;</span> <code>ysw_web@163.com</code></span><span class="contact-item"><span class="icon">&#xe80c;</span> <code>26岁 · 统招全日制本科（计算机科学与技术）</code></span></p></blockquote>
+<h2>个人优势</h2>
+<ul>
+<li><strong>两类 Agent 完整落地经验：</strong> 4 年研发经验，前端出身转全栈与 AI 应用开发，负责过金融档案 RAG 问答与电力数据中台 Text2SQL 两类生产级 Agent，覆盖数据治理、检索、编排、安全、前端交付与评测全链路，均已在真实业务中稳定运行。</li>
+<li><strong>以工程手段约束模型：</strong> 用显式状态图、重试与步数上限、证据充分度判断、拒答阈值和 SQL AST 校验控制模型行为；用 Golden Dataset 评测集和 Langfuse Trace 驱动迭代，每次改动对比 Baseline 回归验证，不靠反复调 Prompt 碰运气。</li>
+<li><strong>熟悉高合规场景细节：</strong> 在金融与电网场景落地过检索层权限前置过滤、行列级权限与动态脱敏、引用真实性校验和 PDF 原文坐标溯源，理解&quot;模型回答必须可核验、数据访问必须可审计&quot;的合规要求。</li>
+<li><strong>全栈交付能力：</strong> 能独立完成从 FastAPI / Node.js 后端服务、向量与全文检索基础设施，到 Vue3 流式交互前端的端到端交付；主导过组件库与工程化脚手架建设，具备把 AI 能力做成可维护产品的工程素养。</li>
+<li><strong>工程化与系统设计能力：</strong>  具备从业务需求拆解、技术方案设计到系统开发与交付的完整工程思维，熟悉异步任务处理、缓存优化、异常重试、超时控制及服务降级等常见机制；能够围绕 AI 应用的稳定性、可维护性与可扩展性进行设计，推动 Agent 从流程验证走向可持续迭代的业务应用。</li>
+</ul>
+<h2>&#xecfa; 专业技能</h2>
+<ul>
+<li><strong>Agent 编排：</strong> LangGraph（StateGraph、条件边、状态管理、重试与步数限制、循环检测）、LangChain、Tool Calling、MCP；熟悉证据驱动的 Plan-Retrieve-Grade-Rewrite-Synthesize 工作流，以及 SQL 生成-校验-执行-修正自纠错闭环；了解 ReAct 推理模式与多模态 Agent 交互模式。</li>
+<li><strong>RAG 检索：</strong> MinerU 分层解析路由、业务感知切分、父子块与跨页表格处理；Milvus + Elasticsearch BM25 混合召回、RRF 融合、BGE-Reranker 重排、受限 HyDE、Multi-Query 改写、术语归一与需求澄清；熟悉拒答阈值与证据截断策略设计，了解 Self-RAG、CRAG、Query Routing 等进阶检索范式。</li>
+<li><strong>Text2SQL：</strong> 元数据治理、Schema Linking 与 Schema 收敛、MSchema 紧凑表达、枚举值真实取值匹配、Few-Shot Prompt 示例库、SQL AST 安全校验、行列权限与动态脱敏、Text2EChart 结果可视化；熟悉 DIN-SQL 与 DAIL-SQL 的 Schema 表示方案。</li>
+<li><strong>评测与可观测：</strong> RAGAS、Recall@K、MRR、Faithfulness、EX、Answer Relevancy；Golden Dataset 评测集构建与回归测试；Langfuse 链路追踪，按节点逐段定位召回、排序、生成问题；基于 A/B Test 与留存率的产品化指标跟踪。</li>
+<li><strong>模型与 Prompt 工程：</strong> 熟悉 OpenAI / Qwen / DeepSeek / GLM / Claude 等模型 API 接入与选型权衡，Function Calling、结构化输出（JSON Schema）、轻量模型做路由与判分的分级调用策略；Prompt 与业务代码解耦的配置化管理，版本控制与灰度发布；Few-Shot 示例库构建与动态注入；了解 CoT、ToT、Self-Consistency 等推理技术。</li>
+<li><strong>后端与存储：</strong> Python、FastAPI、Pydantic、asyncio、Node.js、TypeScript、Express；Milvus、Elasticsearch、Qdrant、MySQL、PostgreSQL、Redis、MinIO、OSS；Docker 容器化部署、RESTful API 设计、异步任务队列（Celery / Redis Queue）。</li>
+<li><strong>前端交付：</strong> Vue3、Pinia、Vite、TypeScript；SSE 多事件流式输出与断线重连、AbortController 全链路取消、流式 Markdown 增量渲染与代码高亮、PDF.js 坐标高亮溯源、Monaco Editor、ECharts、Tailwind CSS；WebSocket 双工通信、前端性能优化（虚拟滚动、懒加载）。</li>
+</ul>
+<h2>&#xe618; 工作经历</h2>
+<div class="entry-title">
+    <h3>北京浮点科技有限公司 — AI 应用开发工程师</h3> 
+    <p>2025.03 - 2026.09</p>
+</div>
+
+<ul>
+<li><strong>业务定位：</strong> 公司主要开展档案信息化与智能数据资产管理，同时面向国企、政企及金融机构提供数据中台、业务数据分析与 AI 应用解决方案，涉及企业档案管理、智能知识检索及数据应用等业务场景。</li>
+<li><strong>核心职责：</strong> 负责 AI 应用的需求分析、技术方案设计与核心功能开发，参与银行金融档案智能问答（RAG）和数据中台智能问数（Text2SQL）项目，涵盖知识检索、Agent 工作流编排、SQL 生成与安全校验等核心模块；同时参与内部研发提效 Agent 建设，沉淀可复用的检索、流程编排与效果评测方案，并参与售前技术方案编写及客户技术交流。</li>
+</ul>
+<div class="entry-title">
+    <h3>天沣(南京)数据技术有限公司 — Web 前端 / 全栈开发工程师</h3> 
+    <p>2022.09 - 2025.02</p>
+</div>
+
+<ul>
+<li><strong>业务定位：</strong> 公司面向电力、能源及工程建设等行业提供软件研发与数字化解决方案，涉及业务管理系统、运营管理平台及数据可视化应用等领域。</li>
+<li><strong>核心职责：</strong> 负责电建业务系统的前端开发与功能迭代，参与业务流程页面、数据可视化及交互模块建设，并基于 Node.js 开发 BFF 中间层；主导前端工程化脚手架与组件库建设，推动团队技术栈统一与规范化。</li>
+</ul>
+<h2>&#xe635; 核心项目经历</h2>
+<div class="entry-title">
+    <h3>银行金融档案智能检索与问答 Agent 平台 </h3>
+    <p>2025.11 - 2026.09</p>
+</div>
+
+<p><strong>项目背景：</strong> 面向金融档案（信贷档案、合规规章、审批材料及扫描合同）版式复杂、跨文档检索难、大模型回答缺乏依据等痛点，主导设计天枢文档预处理平台与档案 RAG 问答 Agent。负责预处理流水线、现代检索增强、多步推理状态机、Prompt 版本管理、前端流式卡片及稳定性治理。<br><strong>技术栈：</strong>  LangGraph、LangChain、FastAPI、Python、Milvus、MinerU / RagFlow (DeepParse)、BGE-Reranker、SSE、Vue3、Pinia</p>
+<ul>
+<li><strong>文档预处理与分层解析：</strong> 针对法律条规、规章制度、扫描件等不同版式设计分流解析流水线，结合 LayoutLM 与 OCR 提取版面结构与目录元数据，按层级切块避免表格跨页截断与条款语义破碎；采用父子块结构支持精准召回与完整上下文检索。</li>
+<li><strong>混合检索与拒答策略：</strong> 引入 HyDE 假设型文档生成、多路问题改写、金融术语库归一等策略丰富检索特征；Dense + BM25 双路召回后经 BGE-Reranker 重排，按相对底线、分数断崖和绝对阈值三级过滤，关键证据召回率达 91.5%，无证据场景直接拒答避免幻觉。</li>
+<li><strong>LangGraph 多步推理编排：</strong> 构建 Plan-SubQuery-Intent-State 显式状态图，轻量模型判断证据充分度，设置重试与步数上限防止死循环；跨年度、多文档问题解决率提升 30%，制度冲突按效力层级判断或并列展示交由人工确认。</li>
+<li><strong>Prompt 工程化管理：</strong> 将 Prompt 与业务代码解耦，构建配置化与语义版本管理系统，支持参数化模板热加载、A/B 分流与 Golden Dataset 回归测试，保障 Prompt 迭代工程安全性。</li>
+<li><strong>流式交互与溯源验证：</strong> 基于 SSE 实现打字机式流式输出，前端有限状态机与幂等机制避免重复提交；后端校验引用 ID 真实性并映射为文档坐标，前端基于 PDF.js 实现点击引用即跳页高亮原文，引用可溯源率 100%。</li>
+<li><strong>评测与稳定性治理：</strong> 全链路超时熔断、死循环检测与优雅降级，检索服务故障时自动回退缓存；基于 300+ 业务问答集评估召回、生成、引用与拒答能力，端到端准确率从 61% 提升至 89.2%，用户满意度从 72% 提升到 89%。</li>
+</ul>
+<div class="entry-title">
+    <h3>数据中台智能问数与决策 Agent 平台 </h3>
+    <p>2025.05 - 2025.10</p>
+</div>
+
+<p><strong>项目背景：</strong> 面向电力营销多表结构复杂、业务取数依赖研发写 SQL、响应周期长等痛点，构建企业级智能问数与决策平台。负责多表 Schema 收敛、Agent 纠错状态机、SQL AST 安全拦截与稳定性治理。<br><strong>技术栈：</strong> LangGraph、LangChain.js、Node.js、TypeScript、Milvus、BM25、BGE-Reranker、SQL Parser (AST)、Monaco Editor、ECharts</p>
+<ul>
+<li><strong>元数据治理与 Schema 收敛：</strong> 梳理电力业务术语、字段别名、指标口径及表关联关系，字段/指标/枚举值分类召回后按依赖关系补全，用 MSchema 紧凑表达，Prompt Token 从 2800 降至 1300（降低 52%），核心字段链接准确率 92%。</li>
+<li><strong>结构化查询理解：</strong> 抽取时间范围、指标、筛选、分组、排序等要素形成 queryState 作为统一输入，枚举值以数据库真实取值为准避免过滤条件错误；多轮对话在 queryState 上增量修改，支持时间追问与条件调整。</li>
+<li><strong>Few-Shot 示例库与动态注入：</strong> 构建按业务主题、查询模式分类的示例库，根据相似度动态注入 2～3 条最相关示例，复杂查询首次成功率提升 27%；示例库支持版本管理与 A/B 测试。</li>
+<li><strong>LangGraph 自纠错闭环：</strong> 把生成、校验、执行、判断、修正拆成显式节点，字段名或语法错误带报错信息让模型最小修改，最多重试 3 次；对常见错误先尝试规则修复再调用模型，连续 SQL 相似度检测防止反复打转。</li>
+<li><strong>SQL 安全与权限治理：</strong> 执行前用 AST 检查语句类型、多语句拼接、子查询中的写操作，杜绝 DDL/DML 越权；行级条件由登录身份注入，敏感字段服务端动态脱敏，配合只读账号、超时与行数限制；SQL 审计日志记录用户、查询与结果，可追溯。</li>
+<li><strong>人机协同与结果交付：</strong> 复杂查询或低置信度场景用 Monaco Editor 展示 SQL 供人工复核，修改后重新校验；根据数据形态自动生成 ECharts 配置（折线/柱状/饼图/散点图），图表失败退回表格，保证结果可交付；支持导出与分享链接。</li>
+<li><strong>评测闭环：</strong> 构建涵盖筛选、聚合、多表 JOIN、窗口函数等场景的 200+ Benchmark，EX 从基线 58.5% 提升至 88.5%，取数耗时从天级缩短至 20 秒级；建立持续评测流水线，每次模型或策略调整自动跑回归。</li>
+</ul>
+<h2>&#xe80c; 教育经历</h2>
+<div class="entry-title">
+    <h3>陇东学院 - 计算机科学与技术 - 统招全日制本科</h3> 
+    <p>2019.09 - 2023.06</p>
+</div>
+
+    </main>
+    <footer class="site-footer">基于 <a href="https://github.com/BingyanStudio/LapisCV">LapisCV</a> 样式制作 · <a href="#top">返回顶部</a></footer>
+  </div>
+</body>
+</html>
