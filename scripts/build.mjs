@@ -50,13 +50,13 @@ const viewerHtml = `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#edf1f6">
   <meta name="description" content="杨舒雯的两页在线简历，保持原 PDF 的 A4 版式。">
-  <title>杨舒雯 · 两页简历</title>
+  <title>杨舒雯 · Agent应用开发</title>
   <link rel="stylesheet" href="./styles/viewer.css">
 </head>
 <body>
   <header class="toolbar">
     <div class="toolbar-inner">
-      <div class="brand">杨舒雯 <span>· 两页简历</span></div>
+      <div class="brand">杨舒雯 <span>· Agent应用开发</span></div>
       <nav aria-label="简历操作">
         <a href="./resume-text.html">文字版</a>
         <a class="primary" href="./assets/resume.pdf" download="杨舒雯-简历.pdf">下载 PDF</a>
